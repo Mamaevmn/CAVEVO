@@ -355,11 +355,17 @@ body {
       flex-shrink: 0;
   width: 200px;
   height: 200px;
+  border: 5px solid transparent;
   background-color: #FFFFFF;
   -webkit-box-shadow: 12.5px 25px 62.5px rgba(0, 0, 0, 0.15);
           box-shadow: 12.5px 25px 62.5px rgba(0, 0, 0, 0.15);
   border-radius: 39.0625px;
   z-index: 1;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+.main__item .promo__logo-link:hover {
+  border-color: #3366FF;
 }
 @media screen and (max-width: 1199px) {
   .main__item .promo__logo-link {
@@ -512,11 +518,17 @@ body {
 .main__item .promo__header .categories__item-link:hover .categories__item-text {
   color: #3366FF;
 }
+.main__item .promo__header .categories__item-link:hover .categories__item-img {
+  border-color: #3366FF;
+}
 .main__item .promo__header .categories__item-img {
   width: 200px;
   height: 200px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  border: 5px solid transparent;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 @media screen and (max-width: 1399px) {
   .main__item .promo__header .categories__item-img {
